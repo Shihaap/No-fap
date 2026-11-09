@@ -9,7 +9,7 @@ jobs:
         with: { distribution: temurin, java-version: 17 }
       - uses: gradle/actions/setup-gradle@v4
         with: { gradle-version: 8.7 }
-      - run: unzip -q FocusLock-project.zip
+      - run: unzip -q FocusLock-project (1).zip
       - run: |
           if [ -f motivation.mp4 ]; then cp motivation.mp4 FocusLock/app/src/main/res/raw/; fi
       - run: gradle assembleDebug -p FocusLock
